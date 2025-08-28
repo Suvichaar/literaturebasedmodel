@@ -316,7 +316,7 @@ if run:
     # Raw JSON download
     with st.expander("🔧 Debug / Raw JSON"):
         st.json(data, expanded=False)
-        ts = datetime.now().strftime(\"%Y%m%d_%H%M%S\")
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         st.download_button(
             \"⬇️ Download analysis JSON\",
             data=json.dumps(data, ensure_ascii=False, indent=2).encode(\"utf-8\"),
