@@ -318,7 +318,7 @@ if run:
         st.json(data, expanded=False)
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         st.download_button(
-            \"⬇️ Download analysis JSON\",
+            "⬇️ Download analysis JSON",
             data=json.dumps(data, ensure_ascii=False, indent=2).encode(\"utf-8\"),
             file_name=f\"literature_analysis_{ts}.json\",
             mime=\"application/json\",
