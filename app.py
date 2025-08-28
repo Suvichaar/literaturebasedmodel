@@ -311,7 +311,7 @@ if run:
     mc = data.get("misconceptions") or []
     if mc:
         st.markdown("### ⚠️ Misconceptions to avoid")
-        st.write(\"\\n\".join(f\"• {m}\" for m in mc))
+        st.write("\n".join(f"• {m}" for m in mc))
 
     # Raw JSON download
     with st.expander("🔧 Debug / Raw JSON"):
